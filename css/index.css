@@ -1,0 +1,21 @@
+body {
+    background: #ddd;
+    font-size: 150%;
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    display: none;
+    max-width: 640px;
+    background: #ff0;
+    padding: 1em;
+    margin: 0.5em auto;
+    border: 2px solid #000;
+}
+
+section.found {
+    display: block;
+}
