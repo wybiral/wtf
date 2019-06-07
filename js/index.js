@@ -31,9 +31,18 @@ const developerListener = {
     detected: [],
 };
 
+const mediaListener = {
+    id: 'media',
+    services: [
+        {url: 'http://127.0.0.1:3689', name: 'Media Player'},
+    ],
+    detected: [],
+};
+
 window.onload = () => {
     start(developerListener);
     start(gamesListener);
+    start(mediaListener);
     start(privacyListener);
 };
 
@@ -49,7 +58,10 @@ function start(listener) {
         if (listener.detected.length === 0) {
             setTimeout(loop, 5000);
         } else {
+            const main = document.querySelector('main');
             const el = document.querySelector('#' + listener.id);
+            main.removeChild(el);
+            main.appendChild(el);
             const name = joinAnd(listener.detected);
             el.querySelector('.name').innerText = name;
             el.className = 'found';
