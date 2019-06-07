@@ -20,9 +20,21 @@ const gamesListener = {
     detected: [],
 };
 
+const developerListener = {
+    id: 'developer',
+    services: [
+        {url: 'http://127.0.0.1:3306', name: 'MySQL'},
+        {url: 'http://127.0.0.1:6379', name: 'Redis'},
+        {url: 'http://127.0.0.1:9200/_cat', name: 'ElasticSearch'},
+        {url: 'http://127.0.0.1:27017', name: 'MongoDB'},
+    ],
+    detected: [],
+};
+
 window.onload = () => {
-    start(privacyListener);
+    start(developerListener);
     start(gamesListener);
+    start(privacyListener);
 };
 
 function start(listener) {
