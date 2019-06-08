@@ -11,6 +11,14 @@ const developerListener = {
     detected: [],
 };
 
+const filesListener = {
+    id: 'files',
+    services: [
+        {url: 'http://127.0.0.1:17600', name: 'Dropbox'},
+    ],
+    detected: [],
+};
+
 const gamesListener = {
     id: 'games',
     services: [
@@ -41,6 +49,7 @@ const privacyListener = {
 
 window.onload = () => {
     start(developerListener);
+    start(filesListener);
     start(gamesListener);
     start(mediaListener);
     start(privacyListener);
