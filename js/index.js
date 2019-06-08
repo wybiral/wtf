@@ -1,13 +1,12 @@
 const FETCH_OPTS = {mode: 'no-cors', cache: 'no-cache'};
 
-const privacyListener = {
-    id: 'privacy',
+const developerListener = {
+    id: 'developer',
     services: [
-        {url: 'http://127.0.0.1:9050', name: 'Tor Daemon'},
-        {url: 'http://127.0.0.1:9051', name: 'Tor Daemon'},
-        {url: 'http://127.0.0.1:9150', name: 'Tor Browser'},
-        {url: 'http://127.0.0.1:9151', name: 'Tor Browser'},
-        {url: 'http://127.0.0.1:9350', name: 'Brave Browser Tor Mode'},
+        {url: 'http://127.0.0.1:3306', name: 'MySQL'},
+        {url: 'http://127.0.0.1:6379', name: 'Redis'},
+        {url: 'http://127.0.0.1:9200/_cat', name: 'ElasticSearch'},
+        {url: 'http://127.0.0.1:27017', name: 'MongoDB'},
     ],
     detected: [],
 };
@@ -20,21 +19,22 @@ const gamesListener = {
     detected: [],
 };
 
-const developerListener = {
-    id: 'developer',
-    services: [
-        {url: 'http://127.0.0.1:3306', name: 'MySQL'},
-        {url: 'http://127.0.0.1:6379', name: 'Redis'},
-        {url: 'http://127.0.0.1:9200/_cat', name: 'ElasticSearch'},
-        {url: 'http://127.0.0.1:27017', name: 'MongoDB'},
-    ],
-    detected: [],
-};
-
 const mediaListener = {
     id: 'media',
     services: [
         {url: 'http://127.0.0.1:3689', name: 'Media Player'},
+    ],
+    detected: [],
+};
+
+const privacyListener = {
+    id: 'privacy',
+    services: [
+        {url: 'http://127.0.0.1:9050', name: 'Tor Daemon'},
+        {url: 'http://127.0.0.1:9051', name: 'Tor Daemon'},
+        {url: 'http://127.0.0.1:9150', name: 'Tor Browser'},
+        {url: 'http://127.0.0.1:9151', name: 'Tor Browser'},
+        {url: 'http://127.0.0.1:9350', name: 'Brave Browser Tor Mode'},
     ],
     detected: [],
 };
