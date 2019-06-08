@@ -38,8 +38,8 @@ const mediaListener = {
 const privacyListener = {
     id: 'privacy',
     services: [
-        {url: 'http://127.0.0.1:9050', name: 'Tor Daemon'},
-        {url: 'http://127.0.0.1:9051', name: 'Tor Daemon'},
+        {url: 'http://127.0.0.1:9050', name: 'Tor daemon'},
+        {url: 'http://127.0.0.1:9051', name: 'Tor daemon'},
         {url: 'http://127.0.0.1:9150', name: 'Tor Browser'},
         {url: 'http://127.0.0.1:9151', name: 'Tor Browser'},
         {url: 'http://127.0.0.1:9350', name: 'Brave Browser Tor Mode'},
