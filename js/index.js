@@ -23,6 +23,7 @@ const gamesListener = {
     id: 'games',
     services: [
         {url: 'http://127.0.0.1:27060', name: 'Steam'},
+        {url: 'http://127.0.0.1:6463', name: 'Discord'},
     ],
     detected: [],
 };
