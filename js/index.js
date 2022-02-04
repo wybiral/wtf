@@ -48,21 +48,12 @@ const privacyListener = {
     detected: [],
 };
 
-const discoverListener = {
-    id: 'discover',
-    services: [
-        {url: 'http://127.0.0.1:5357', name: 'Microsoft Network Discovery'},
-    ],
-    detected: [],
-};
-
 window.onload = () => {
     start(developerListener);
     start(filesListener);
     start(gamesListener);
     start(mediaListener);
     start(privacyListener);
-    start(discoverListener);
 };
 
 function start(listener) {
