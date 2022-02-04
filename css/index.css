@@ -10,14 +10,15 @@ h1 {
 main {
     display: flex;
     flex-direction: column-reverse;
+    max-width: 640px;
+    margin: 0 auto;
 }
 
 section {
     display: none;
-    max-width: 640px;
     background: #ff0;
     padding: 1em;
-    margin: 0.5em auto;
+    margin-bottom: 1em;
     border: 2px solid #000;
 }
 
